@@ -7,7 +7,7 @@ const Ingredients = ({ bagel, ingredients, price, index }) => (
     <div className="relative h-[484px] w-[455px]">
       <img
         src={`${index % 2 ? '/list-right.svg' : '/list-left.svg'}`}
-        alt="list left"
+        alt="list"
         className="absolute z-0 object-contain"
       />
       <ul className={`absolute list-disc z-10 text-black text-[16px] top-1/2 left-1/2 w-[261px] ${index % 2 ? '-translate-x-[35%] -translate-y-[40%]' : '-translate-x-[55%] -translate-y-[55%]'}`}>

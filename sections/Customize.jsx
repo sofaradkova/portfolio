@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 import styles from '../styles';
 import { staggerContainer } from '../utils/motion';
-import { TitleText, BodyText } from '../components';
+import { TitleText, TypingText } from '../components';
 
 const Customize = () => (
   <section className="mt-[600px]">
@@ -15,7 +15,7 @@ const Customize = () => (
       viewport={{ once: false, amount: 0.25 }}
       className={`${styles.innerWidth} flex flex-col items-center`}
     >
-      <BodyText title="Haven't found the right one?" textStyles="text-center text-[16px]" />
+      <TypingText title="Haven't found the right one?" textStyles="text-center text-[16px]" />
       <TitleText title={<p>Customize Your Bagel</p>} textStyles="text-center text-main-brown mt-[30px]" />
     </motion.div>
   </section>

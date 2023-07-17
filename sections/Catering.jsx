@@ -12,7 +12,7 @@ const Catering = () => {
   const [active, setActive] = useState('world-2');
 
   return (
-    <section className={`${styles.paddings} mt-[550px]`} id="explore">
+    <section className="mx-[8vw] mt-[550px]" id="explore">
       <motion.div
         variants={staggerContainer}
         initial="hidden"
@@ -36,7 +36,7 @@ const Catering = () => {
           variants={fadeIn('right', 'spring', 1.5, 0.75)}
           className="text-center"
         >
-          <LightButton title="More Catering Options" buttonStyle="text-center mt-[40px]" />
+          <LightButton title="More Catering Options" buttonStyle="text-center mt-[20px]" />
         </motion.div>
       </motion.div>
     </section>
