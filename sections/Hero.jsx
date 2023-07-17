@@ -1,0 +1,62 @@
+'use client';
+
+import { motion } from 'framer-motion';
+
+import styles from '../styles';
+import { textVariant, staggerContainer } from '../utils/motion';
+import { DarkButton, LightButton } from '../components';
+
+const Hero = () => (
+  <section className="mx-[4vw] sm:pl-16 pl-6 static flex flex-col mb-[350px] items-start">
+    <motion.div
+      variants={staggerContainer}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.25 }}
+      className={`${styles.innerWidth} relative`}
+    >
+      <div>
+        <div className="flex justify-center flex-start flex-col relative z-10">
+          <motion.h1
+            variants={textVariant(0.9)}
+            className={styles.heroHeading}
+          >
+            Everything
+          </motion.h1>
+          <motion.div
+            variants={textVariant(1.0)}
+            className="flex flex-row justify-сenter items-center"
+          >
+            <h1 className={styles.heroHeading}>
+              Bagels
+            </h1>
+          </motion.div>
+        </div>
+        <motion.div
+          variants={textVariant(1.1)}
+          className="flex flex-row justify-сenter items-center"
+        >
+          <p className="mt-[21px] mb-[28px] leading-[22.4px]">Tasty gourmet bagels, avant-garde <br /> sandwiches & premiere bagel burgers</p>
+        </motion.div>
+        <motion.div
+          variants={textVariant(1.1)}
+          className="flex flex-row justify-сenter items-center"
+        >
+          <div className="flex gap-2">
+            <DarkButton title="Order Now" buttonStyle="bg-light-brown" />
+            <LightButton title="View Menu" />
+          </div>
+        </motion.div>
+
+      </div>
+      <div className="absolute translate-x-[70%] -translate-y-[48%] w-[55vw] h-[55vw]">
+        <img
+          src="hero-bagel.svg"
+          alt="hero-img"
+        />
+      </div>
+    </motion.div>
+  </section>
+);
+
+export default Hero;
