@@ -21,8 +21,8 @@ export const navVariants = {
 
 export const slideIn = (direction, type, delay, duration) => ({
   hidden: {
-    x: direction === 'left' ? '-400%' : direction === 'right' ? '100%' : 0,
-    y: direction === 'up' ? '400%' : direction === 'down' ? '100%' : 0,
+    x: direction === 'left' ? '-400%' : direction === 'right' ? '400%' : 0,
+    y: direction === 'up' ? '400%' : direction === 'down' ? '400%' : 0,
   },
   show: {
     x: 0,
