@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 import styles from '../styles';
 import { staggerContainer } from '../utils/motion';
-import { TitleText, TypingText } from '../components';
+import { TitleText, TypingText, Button } from '../components';
 
 const Customize = () => (
   <section className="mt-[600px]">
@@ -17,6 +17,7 @@ const Customize = () => (
     >
       <TypingText title="Haven't found the right one?" textStyles="text-center text-[16px]" />
       <TitleText title={<p>Customize Your Bagel</p>} textStyles="text-center text-main-brown mt-[30px]" />
+      <Button>Example</Button>
     </motion.div>
   </section>
   /*

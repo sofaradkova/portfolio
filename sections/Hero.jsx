@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 
 import styles from '../styles';
-import { textVariant, staggerContainer } from '../utils/motion';
+import { textVariant, staggerContainer, bagelSpin } from '../utils/motion';
 import { DarkButton, LightButton } from '../components';
 
 const Hero = () => (
@@ -18,13 +18,13 @@ const Hero = () => (
       <div>
         <div className="flex justify-center flex-start flex-col relative z-10">
           <motion.h1
-            variants={textVariant(0.9)}
+            variants={textVariant(1.3)}
             className={styles.heroHeading}
           >
             Everything
           </motion.h1>
           <motion.div
-            variants={textVariant(1.0)}
+            variants={textVariant(1.4)}
             className="flex flex-row justify-сenter items-center"
           >
             <h1 className={styles.heroHeading}>
@@ -33,13 +33,13 @@ const Hero = () => (
           </motion.div>
         </div>
         <motion.div
-          variants={textVariant(1.1)}
+          variants={textVariant(1.5)}
           className="flex flex-row justify-сenter items-center"
         >
           <p className="mt-[21px] mb-[28px] leading-[22.4px]">Tasty gourmet bagels, avant-garde <br /> sandwiches & premiere bagel burgers</p>
         </motion.div>
         <motion.div
-          variants={textVariant(1.1)}
+          variants={textVariant(1.5)}
           className="flex flex-row justify-сenter items-center"
         >
           <div className="flex gap-2">
@@ -49,12 +49,16 @@ const Hero = () => (
         </motion.div>
 
       </div>
-      <div className="absolute translate-x-[70%] -translate-y-[48%] w-[55vw] h-[55vw]">
+      <motion.div
+        variants={bagelSpin('right')}
+        className="absolute flex w-[55vw] h-[55vw] -right-[75px] -top-[10px]"
+      >
         <img
           src="hero-bagel.svg"
           alt="hero-img"
+          className="flex 1"
         />
-      </div>
+      </motion.div>
     </motion.div>
   </section>
 );

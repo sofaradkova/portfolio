@@ -1,3 +1,6 @@
+'use client';
+
+import { Button } from '@material-tailwind/react';
 import Navbar from './Navbar';
 import { TypingText, TitleText, BodyText } from './CustomTexts';
 import ExploreCard from './ExploreCard';
@@ -17,4 +20,5 @@ export {
   DarkButton,
   LightButton,
   Ingredients,
+  Button,
 };

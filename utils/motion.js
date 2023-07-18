@@ -106,10 +106,10 @@ export const fadeIn = (direction, type, delay, duration) => ({
   },
 });
 
-export const planetVariants = (direction) => ({
+export const bagelSpin = (direction) => ({
   hidden: {
     x: direction === 'left' ? '-100%' : '100%',
-    rotate: 120,
+    rotate: 100,
   },
   show: {
     x: 0,
@@ -117,7 +117,7 @@ export const planetVariants = (direction) => ({
     transition: {
       type: 'spring',
       duration: 1.0,
-      delay: 0.3,
+      delay: 0.7,
     },
   },
 });
