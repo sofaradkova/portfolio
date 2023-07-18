@@ -22,11 +22,17 @@ const ExploreCard = ({ id, imgUrl, title, index, active, handleClick }) => (
         {title}
       </h3>
     ) : (
-      <div className="absolute bottom-0 p-8 justify-start w-full flex-col bg-[rgba(0,0,0,0.5)] rounded-[24px]">
-        <p className="font-normal text-[16px] leading-[20px] text-secondary-white">
-          See What's Inside
-        </p>
-        <h2 className="mt-[24px] font-semibold sm:text-[32px] text-[24px] text-secondary-white">
+      <div className="absolute bottom-0 p-8 justify-start w-full flex-col">
+        <div className="flex">
+          <p className="font-normal text-[16px] leading-[20px] text-secondary-white">
+            See What's Inside
+          </p>
+          <img 
+            src="/small-arrow.svg"
+            alt="small-arrow"
+          />
+        </div>
+        <h2 className="mt-[12px] font-semibold sm:text-[32px] text-[24px] text-secondary-white">
           {title}
         </h2>
       </div>

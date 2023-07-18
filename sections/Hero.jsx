@@ -59,6 +59,16 @@ const Hero = () => (
           className="flex 1"
         />
       </motion.div>
+      <motion.div 
+        variants={textVariant(2.0)}
+        className="absolute flex left-[300px] top-[340px]"
+      >
+        <img 
+        src="curved-arrow.svg"
+        alt="curved-arrow"
+        className="flex 1"
+        />
+      </motion.div>
     </motion.div>
   </section>
 );

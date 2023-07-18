@@ -2,8 +2,7 @@
 
 import { motion } from 'framer-motion';
 
-import styles from '../styles';
-import { fadeIn, staggerContainer } from '../utils/motion';
+import { fadeIn, staggerContainer, textVariant } from '../utils/motion';
 
 const About = () => (
   <section className="mx-[11vw] mt-[170px]">
@@ -33,6 +32,16 @@ const About = () => (
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras  parturient montes, nascetur ridiculus mus. Donec quam felis,
           </p>
         </div>
+        <motion.div 
+        variants={textVariant(1.0)}
+        className="absolute flex left-[200px] top-[535px] w-[17vw] z-20 rotate-[40deg]"
+      >
+        <img 
+        src="curly-arrow.svg"
+        alt="curly-arrow"
+        className="flex-1 rotate-[40deg] object-contain"
+        />
+      </motion.div>
       </motion.div>
 
       <motion.div

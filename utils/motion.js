@@ -116,6 +116,7 @@ export const bagelSpin = (direction) => ({
     rotate: 0,
     transition: {
       type: 'spring',
+      bounce: 0.1,
       duration: 1.0,
       delay: 0.7,
     },

@@ -13,11 +13,10 @@ const Customize = () => (
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className={`${styles.innerWidth} flex flex-col items-center`}
+      className={`${styles.innerWidth} flex flex-col justify-center`}
     >
-      <TypingText title="Haven't found the right one?" textStyles="text-center text-[16px]" />
-      <TitleText title={<p>Customize Your Bagel</p>} textStyles="text-center text-main-brown mt-[30px]" />
-      <Button>Example</Button>
+      <TypingText title="Haven't found the right one?" textStyles="text-center text-[24px]" />
+      <TitleText title={<p>Customize Your Bagel</p>} textStyles="text-center text-main-brown mt-[5px]" />
     </motion.div>
   </section>
   /*

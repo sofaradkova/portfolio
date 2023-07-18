@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 
 import styles from '../styles';
-import { staggerContainer, slideIn } from '../utils/motion';
+import { staggerContainer, slideIn, textVariant } from '../utils/motion';
 import { TitleText, TypingText, BodyText, DarkButton } from '../components';
 
 const Finisher = () => (
@@ -19,9 +19,12 @@ const Finisher = () => (
       <TitleText title={<>Come enjoy your bagel with us</>} textStyles="text-center text-main-red" />
       <BodyText title="Weekdays    6:30AM-1:30PM" textStyles="text-center opacity-75 mt-[26px]" />
       <BodyText title="Weekends    7:00AM-2:00PM" textStyles="text-center opacity-75 mt-[8px]" />
-      <div className="text-center static">
-        <DarkButton title="Order Now" buttonStyle="bg-main-red text-main-yellow mt-[40px] mb-[115px] border-main-red hover:bg-main-yellow hover:text-main-red" />
-      </div>
+      <motion.div
+            variants={textVariant(0.8)}
+            className="flex justify-center items-center"
+          >
+            <DarkButton title="Order Now" buttonStyle="flex-[0.075] bg-main-red text-main-yellow mt-[40px] mb-[115px] border-main-red hover:bg-main-yellow hover:text-main-red" />
+          </motion.div>
       <motion.div
         variants={slideIn('left', 'tween', 0.2, 1)}
         className={`${styles.flexCenter} absolute w-[30vw] flex -bottom-[70px] -left-[55px]`}
