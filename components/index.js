@@ -8,6 +8,7 @@ import NewFeatures from './NewFeatures';
 import Footer from './Footer';
 import { DarkButton, LightButton } from './Buttons';
 import Ingredients from './Ingredients';
+import { CarouselCustom } from './CarouselCustom';
 
 export {
   Navbar,
@@ -19,6 +20,7 @@ export {
   Footer,
   DarkButton,
   LightButton,
+  CarouselCustom,
   Ingredients,
   Button,
 };

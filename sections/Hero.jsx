@@ -36,7 +36,7 @@ const Hero = () => (
           variants={textVariant(1.5)}
           className="flex flex-row justify-сenter items-center"
         >
-          <p className="mt-[21px] mb-[28px] leading-[22.4px]">Tasty gourmet bagels, avant-garde <br /> sandwiches & premiere bagel burgers</p>
+          <p className="mt-[21px] mb-[28px] leading-[22.4px] text-black">Tasty gourmet bagels, avant-garde <br /> sandwiches & premiere bagel burgers</p>
         </motion.div>
         <motion.div
           variants={textVariant(1.5)}

@@ -12,7 +12,7 @@ const Catering = () => {
   const [active, setActive] = useState('option-2');
 
   return (
-    <section className="mx-[8vw] mt-[550px]" id="explore">
+    <section className="mx-[8vw] mt-[200px]" id="explore">
       <motion.div
         variants={staggerContainer}
         initial="hidden"

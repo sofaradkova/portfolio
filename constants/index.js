@@ -48,6 +48,12 @@ export const ingredientsList = [
   },
 ];
 
+export const bagels = ['/bagel-named.svg', '/bagel-named.svg', '/bagel-named.svg', '/bagel-named.svg', '/bagel-named.svg', '/bagel-named.svg', '/bagel-named.svg', '/everything-bagel.png'];
+
+export const spreads = ['/scallion-cc.svg', '/scallion-cc.svg', '/scallion-cc.svg', '/scallion-cc.svg', '/scallion-cc.svg', '/scallion-cc.svg', '/scallion-cc.svg', '/scallion-cc.svg'];
+
+export const toppings = ['/avocado.svg', '/avocado.svg', '/avocado.svg', '/avocado.svg', '/avocado.svg', '/avocado.svg', '/avocado.svg', '/avocado.svg'];
+
 export const socials = [
   {
     name: 'twitter',

@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { Ingredients, DarkButton, TitleText } from '../components';
 
 import styles from '../styles';
-import { staggerContainer, slideIn, fadeIn } from '../utils/motion';
+import { staggerContainer, slideIn } from '../utils/motion';
 import { ingredientsList } from '../constants';
 
 const Sandwiches = () => (

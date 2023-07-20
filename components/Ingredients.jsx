@@ -13,7 +13,7 @@ const Ingredients = ({ bagel, ingredients, price, index }) => (
           <li className="leading-[50px]">{ingredient}</li>
         ))}
       </ul>
-      <p className={`absolute font-bold z-10 inset-0 ${index % 2 ? 'translate-x-[29%] -translate-y-[5%]' : 'translate-x-[75%] translate-y-[50%]'} rotate-[-27.5deg]`}>{bagel}</p>
+      <p className={`absolute font-bold z-10 inset-0 text-black ${index % 2 ? 'translate-x-[29%] -translate-y-[5%]' : 'translate-x-[75%] translate-y-[50%]'} rotate-[-27.5deg]`}>{bagel}</p>
       <p className={`absolute font-bold font-numbers text-[48px] text-main-brown z-10 inset-0 ${index % 2 ? 'translate-x-[82%] translate-y-[74.5%]' : 'translate-x-[11.5%] translate-y-[7.5%]'}`}>${price}</p>
     </div>
   </div>

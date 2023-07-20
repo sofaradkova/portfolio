@@ -18,7 +18,7 @@ const Navbar = () => (
         alt="main-logo"
         className="w-[72px] h-[72px] object-contain"
       />
-      <div className="flex justify-between w-[327px] gap-[32px]">
+      <div className="flex justify-between w-[327px] gap-[32px] text-black">
         <a>Home</a>
         <a>Menu</a>
         <a>Catering</a>

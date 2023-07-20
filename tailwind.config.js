@@ -3,6 +3,7 @@
 const withMT = require('@material-tailwind/react/utils/withMT');
 
 module.exports = withMT({
+  plugins: [require('daisyui')],
   content: [
     './node_modules/flowbite/**/*.js',
     './node_modules/flowbite-react/**/*.js',
