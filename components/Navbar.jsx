@@ -19,10 +19,10 @@ const Navbar = () => (
         className="w-[72px] h-[72px] object-contain"
       />
       <div className="flex justify-between w-[327px] gap-[32px] text-black">
-        <a>Home</a>
-        <a>Menu</a>
-        <a>Catering</a>
-        <a>About Us</a>
+        <a href="https://www.google.com/">Home</a>
+        <a href="https://www.google.com/">Menu</a>
+        <a href="https://www.google.com/">Catering</a>
+        <a href="https://www.google.com/">About Us</a>
       </div>
     </div>
   </motion.nav>
