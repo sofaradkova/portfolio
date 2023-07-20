@@ -20,7 +20,7 @@ const Footer = () => (
           alt="main logo"
           className="w-[124px] h-[124px]"
         />
-        <div className="flex gap-[72px] opacity-75">
+        <div className="flex gap-[72px] opacity-75 text-black">
           <ul className="text-right m-0">
             <li>(919)251-8738</li>
             <li className="mt-[16px]">eat@everythingbagels.net</li>
