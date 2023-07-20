@@ -9,7 +9,7 @@ import { staggerContainer, fadeIn } from '../utils/motion';
 import { exploreWorlds } from '../constants';
 
 const Catering = () => {
-  const [active, setActive] = useState('world-2');
+  const [active, setActive] = useState('option-2');
 
   return (
     <section className="mx-[8vw] mt-[550px]" id="explore">

@@ -3,26 +3,31 @@ export const exploreWorlds = [
     id: 'option-1',
     imgUrl: '/catering-img.jpeg',
     title: 'Classy Brunch',
+    content: ['Assorted bagels', 'Lox', 'Avocado smash', 'Soft boiled eggs', 'Chili crisp', 'Raw&pickled things'],
   },
   {
     id: 'option-2',
     imgUrl: '/catering-img.jpeg',
     title: 'Bagel Bar',
+    content: ['Assorted bagels', 'Lox', 'Avocado smash', 'Soft boiled eggs', 'Chili crisp', 'Raw&pickled things'],
   },
   {
     id: 'option-3',
     imgUrl: '/catering-img.jpeg',
     title: 'Basic Breakfast',
+    content: ['Assorted bagels', 'Lox', 'Avocado smash', 'Soft boiled eggs', 'Chili crisp', 'Raw&pickled things'],
   },
   {
     id: 'option-4',
     imgUrl: '/catering-img.jpeg',
     title: 'Sandwich Platter',
+    content: ['Assorted bagels', 'Lox', 'Avocado smash', 'Soft boiled eggs', 'Chili crisp', 'Raw&pickled things'],
   },
   {
     id: 'option-5',
     imgUrl: '/catering-img.jpeg',
     title: 'Party Favors',
+    content: ['Assorted bagels', 'Lox', 'Avocado smash', 'Soft boiled eggs', 'Chili crisp', 'Raw&pickled things'],
   },
 ];
 
@@ -40,21 +45,6 @@ export const ingredientsList = [
     ingredients: ['Brooklyn-style whitefish salad', 'Whipped cream cheese', 'Cucumbers', 'Onion crunch'],
     price: 9,
     imgUrl: '/whitefish-salad.svg',
-  },
-];
-
-export const newFeatures = [
-  {
-    imgUrl: '/vrpano.svg',
-    title: 'A new world',
-    subtitle:
-        'we have the latest update with new world for you to try never mind',
-  },
-  {
-    imgUrl: '/headset.svg',
-    title: 'More realistic',
-    subtitle:
-        'In the latest update, your eyes are narrow, making the world more realistic than ever',
   },
 ];
 

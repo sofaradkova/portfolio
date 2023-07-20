@@ -2,9 +2,8 @@
 
 import { motion } from 'framer-motion';
 
-import styles from '../styles';
 import { staggerContainer } from '../utils/motion';
-import { TitleText, TypingText, Button } from '../components';
+import { TitleText, TypingText } from '../components';
 
 const Customize = () => (
   <section className="mt-[600px]">
@@ -13,10 +12,10 @@ const Customize = () => (
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className={`${styles.innerWidth} flex flex-col justify-center`}
+      className="flex flex-col justify-center items-center"
     >
       <TypingText title="Haven't found the right one?" textStyles="text-center text-[24px]" />
-      <TitleText title={<p>Customize Your Bagel</p>} textStyles="text-center text-main-brown mt-[5px]" />
+      <TitleText title="Customize Your Bagel" textStyles="text-center text-main-brown mt-[5px]" />
     </motion.div>
   </section>
   /*

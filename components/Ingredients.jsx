@@ -1,7 +1,5 @@
 'use client';
 
-import styles from '../styles';
-
 const Ingredients = ({ bagel, ingredients, price, index }) => (
   <div className="p-4">
     <div className="relative h-[484px] w-[455px]">
