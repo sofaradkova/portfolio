@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 
+import Link from 'next/link';
 import styles from '../styles';
 import { navVariants } from '../utils/motion';
 
@@ -19,10 +20,10 @@ const Navbar = () => (
         className="w-[72px] h-[72px] object-contain"
       />
       <div className="flex justify-between w-[327px] gap-[32px] text-black">
-        <a href="https://www.google.com/">Home</a>
-        <a href="https://www.google.com/">Menu</a>
-        <a href="https://www.google.com/">Catering</a>
-        <a href="https://www.google.com/">About Us</a>
+        <Link href="/">Home</Link>
+        <Link href="/menu">Menu</Link>
+        <Link href="/catering">Catering</Link>
+        <a href="/aboutus">About Us</a>
       </div>
     </div>
   </motion.nav>

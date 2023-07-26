@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { fadeIn, staggerContainer, textVariant } from '../utils/motion';
 
 const About = () => (
-  <section className="mx-[11vw] mt-[170px]">
+  <section className="mx-[11vw] mt-[170px]" id="about">
     <motion.div
       variants={staggerContainer}
       initial="hidden"
