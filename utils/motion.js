@@ -23,10 +23,12 @@ export const slideIn = (direction, type, delay, duration) => ({
   hidden: {
     x: direction === 'left' ? '-600%' : direction === 'right' ? '400%' : 0,
     y: direction === 'up' ? '400%' : direction === 'down' ? '400%' : 0,
+    opacity: 0,
   },
   show: {
     x: 0,
     y: 0,
+    opacity: 1,
     transition: {
       type,
       delay,
@@ -110,9 +112,11 @@ export const bagelSpin = (direction) => ({
   hidden: {
     x: direction === 'left' ? '-100%' : '100%',
     rotate: 100,
+    opacity: 0,
   },
   show: {
     x: 0,
+    opacity: 1,
     rotate: 0,
     transition: {
       type: 'spring',

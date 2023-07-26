@@ -7,7 +7,7 @@ import { textVariant, staggerContainer, bagelSpin } from '../utils/motion';
 import { DarkButton, LightButton } from '../components';
 
 const Hero = () => (
-  <section className="mx-[4vw] sm:pl-16 pl-6 static flex flex-col mb-[350px] items-start">
+  <section className="mx-auto sm:pl-16 pl-6 static flex flex-col mb-[350px] items-center">
     <motion.div
       variants={staggerContainer}
       initial="hidden"
@@ -43,7 +43,9 @@ const Hero = () => (
           className="flex flex-row justify-сenter items-center"
         >
           <div className="flex gap-2">
-            <DarkButton title="Order Now" buttonStyle="bg-light-brown" />
+            <a href="https://order.toasttab.com/online/everything-bagels-durham-530-foster-st#!/order" target="_blank" rel="noreferrer">
+              <DarkButton title="Order Now" buttonStyle="bg-light-brown" />
+            </a>
             <LightButton title="View Menu" />
           </div>
         </motion.div>
@@ -51,7 +53,7 @@ const Hero = () => (
       </div>
       <motion.div
         variants={bagelSpin('right')}
-        className="absolute flex w-[55vw] h-[55vw] -right-[75px] -top-[10px]"
+        className="absolute flex w-[800px] h-[800px] -right-[75px] -top-[10px]"
       >
         <img
           src="hero-bagel.svg"

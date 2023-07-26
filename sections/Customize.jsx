@@ -32,12 +32,15 @@ const Customize = () => (
       >
         <CarouselCustom title="Add Toppings" index="3" options={toppings} />
       </motion.div>
-      <motion.div
-        variants={slideIn('left', 'tween', 0.2, 1)}
-        className="text-center"
-      >
-        <DarkButton title="Order Now" buttonStyle="bg-light-brown mt-[50px]" />
-      </motion.div>
+      <a href="https://order.toasttab.com/online/everything-bagels-durham-530-foster-st#!/order" target="_blank" rel="noreferrer">
+        <motion.div
+          variants={slideIn('left', 'tween', 0.2, 1)}
+          className="text-center"
+        >
+          <DarkButton title="Order Now" buttonStyle="bg-light-brown mt-[50px]" />
+        </motion.div>
+      </a>
+
     </motion.div>
   </section>
 );

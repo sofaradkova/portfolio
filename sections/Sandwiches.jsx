@@ -8,7 +8,7 @@ import { staggerContainer, slideIn } from '../utils/motion';
 import { ingredientsList } from '../constants';
 
 const Sandwiches = () => (
-  <section className={`${styles.paddings} relative z-10 h-[900px] mt-[450px]`}>
+  <section className={`${styles.paddings} relative z-10 h-[900px] mt-[450px] flex justify-center`}>
     <motion.div
       variants={staggerContainer}
       initial="hidden"
@@ -22,10 +22,10 @@ const Sandwiches = () => (
       >
         <div className="mt-[31px] flex flex-col">
           {ingredientsList.map((sandwich, index) => (
-            <div className={`flex ${index % 2 ? 'flex-row-reverse' : 'flex-row'} gap-6 mx-auto ${index % 2 ? 'left' : 'right'}`}>
+            <div className={`flex ${(index + 1) % 2 ? 'flex-row' : 'flex-row-reverse'} gap-6 w-full mx-auto`}>
               <motion.div
-                variants={slideIn(`${index % 2 ? 'right' : 'left'}`, 'tween', 0.2, 1)}
-                className="flex justify-center flex-col"
+                variants={slideIn(`${(index + 1) % 2 ? 'left' : 'right'}`, 'tween', 0.2, 1)}
+                className="flex-1 flex justify-center flex-col"
               >
                 <Ingredients
                   key={sandwich.name}
@@ -34,13 +34,13 @@ const Sandwiches = () => (
                 />
               </motion.div>
               <motion.div
-                variants={slideIn(`${index % 2 ? 'left' : 'right'}`, 'tween', 0.2, 1)}
-                className={`flex-1 ${styles.flexCenter} relative w-[45vw]`}
+                variants={slideIn(`${(index + 1) % 2 ? 'right' : 'left'}`, 'tween', 0.2, 1)}
+                className={`flex-1 ${styles.flexCenter}`}
               >
                 <img
                   src={`${sandwich.imgUrl}`}
                   alt={`${sandwich.imgUrl}`}
-                  className={`w-[90%] h-[90%] object-contain absolute ${index % 2 ? 'right-[3.5vw]' : 'left-[3.5vw]'}`}
+                  className="w-[90%] h-[90%] object-contain"
                 />
               </motion.div>
             </div>

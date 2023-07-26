@@ -21,7 +21,7 @@ const Catering = () => {
         className={`${styles.innerWidth} mx-auto flex flex-col px-[50px]`}
       >
         <TitleText title={<p>We Do Catering Too!</p>} textStyles="text-center text-main-brown" />
-        <div className="mt-[40px] flex lg:flex-row flex-col min-h-[70vh] gap-5">
+        <div className="mt-[40px] flex lg:flex-row flex-col gap-5">
           {exploreWorlds.map((world, index) => (
             <ExploreCard
               key={world.id}
