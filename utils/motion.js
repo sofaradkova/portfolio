@@ -122,7 +122,7 @@ export const bagelSpin = (direction) => ({
       type: 'spring',
       bounce: 0.1,
       duration: 1.0,
-      delay: 0.7,
+      delay: 0.4,
     },
   },
 });

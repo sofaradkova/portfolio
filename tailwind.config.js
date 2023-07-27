@@ -28,6 +28,7 @@ module.exports = withMT({
       },
       fontFamily: {
         numbers: ['"Just Another Hand"', 'sans-serif'],
+        main: ['"Kaisei Tokumin"', 'sans-serif'],
       },
     },
   },

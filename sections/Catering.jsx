@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 import { ExploreCard, TitleText, LightButton } from '../components';
 
 import styles from '../styles';
@@ -32,12 +33,14 @@ const Catering = () => {
             />
           ))}
         </div>
-        <motion.div
-          variants={fadeIn('right', 'spring', 1.5, 0.75)}
-          className="text-center"
-        >
-          <LightButton title="More Catering Options" buttonStyle="text-center mt-[20px]" />
-        </motion.div>
+        <Link href="/catering">
+          <motion.div
+            variants={fadeIn('right', 'spring', 1.5, 0.75)}
+            className="text-center"
+          >
+            <LightButton title="More Catering Options" buttonStyle="text-center mt-[20px]" />
+          </motion.div>
+        </Link>
       </motion.div>
     </section>
   );

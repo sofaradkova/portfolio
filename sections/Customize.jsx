@@ -7,13 +7,13 @@ import { staggerContainer, slideIn, textVariant } from '../utils/motion';
 import { TitleText, TypingText, DarkButton, CarouselCustom } from '../components';
 
 const Customize = () => (
-  <section className="mt-[600px]">
+  <section>
     <motion.div
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
-      className="flex flex-col justify-center items-center"
+      viewport={{ once: false, amount: 0.15 }}
+      className="flex flex-col justify-center items-center mt-[200px]"
     >
       <TypingText title="Haven't found the right one?" textStyles="text-center text-[24px]" />
       <TitleText title="Customize Your Bagel" textStyles="text-center text-main-brown mt-[5px]" />

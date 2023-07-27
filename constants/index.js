@@ -31,7 +31,7 @@ export const exploreWorlds = [
   },
 ];
 
-export const ingredientsList = [
+export const menuPreview = [
   {
     name: 'Whitefish Salad',
     bagel: 'Everything Bagel',
@@ -48,7 +48,38 @@ export const ingredientsList = [
   },
 ];
 
-export const bagels = ['/bagel-named.svg', '/bagel-named.svg', '/bagel-named.svg', '/bagel-named.svg', '/bagel-named.svg', '/bagel-named.svg', '/bagel-named.svg', '/everything-bagel.png'];
+export const fullMenu = [
+  {
+    name: 'Whitefish Salad',
+    bagel: 'Everything Bagel',
+    ingredients: ['Brooklyn-style whitefish salad', 'Whipped cream cheese', 'Cucumbers', 'Onion crunch'],
+    price: 9,
+    imgUrl: '/chicken-katsu.svg',
+  },
+  {
+    name: 'Whitefish Salad',
+    bagel: 'Everything Bagel',
+    ingredients: ['Brooklyn-style whitefish salad', 'Whipped cream cheese', 'Cucumbers', 'Onion crunch'],
+    price: 9,
+    imgUrl: '/whitefish-salad.svg',
+  },
+  {
+    name: 'Whitefish Salad',
+    bagel: 'Everything Bagel',
+    ingredients: ['Brooklyn-style whitefish salad', 'Whipped cream cheese', 'Cucumbers', 'Onion crunch'],
+    price: 9,
+    imgUrl: '/chicken-katsu.svg',
+  },
+  {
+    name: 'Whitefish Salad',
+    bagel: 'Everything Bagel',
+    ingredients: ['Brooklyn-style whitefish salad', 'Whipped cream cheese', 'Cucumbers', 'Onion crunch'],
+    price: 9,
+    imgUrl: '/whitefish-salad.svg',
+  },
+];
+
+export const bagels = ['/bagel-named.svg', '/bagel-named.svg', '/bagel-named.svg', '/bagel-named.svg', '/bagel-named.svg', '/bagel-named.svg', '/bagel-named.svg'];
 
 export const spreads = ['/scallion-cc.svg', '/scallion-cc.svg', '/scallion-cc.svg', '/scallion-cc.svg', '/scallion-cc.svg', '/scallion-cc.svg', '/scallion-cc.svg', '/scallion-cc.svg'];
 
@@ -66,5 +97,38 @@ export const socials = [
   {
     name: 'instagram',
     url: '/instagram.svg',
+  },
+];
+
+export const employees = [
+  {
+    name: 'Whitefish Salad',
+    role: 'Everything Bagel',
+    photo: '/employee1.jpg',
+  },
+  {
+    name: 'Whitefish Salad',
+    role: 'Everything Bagel',
+    photo: '/employee1.jpg',
+  },
+  {
+    name: 'Whitefish Salad',
+    role: 'Everything Bagel',
+    photo: '/employee1.jpg',
+  },
+  {
+    name: 'Whitefish Salad',
+    role: 'Everything Bagel',
+    photo: '/employee2.jpg',
+  },
+  {
+    name: 'Whitefish Salad',
+    role: 'Everything Bagel',
+    photo: '/employee2.jpg',
+  },
+  {
+    name: 'Whitefish Salad',
+    role: 'Everything Bagel',
+    photo: '/employee2.jpg',
   },
 ];

@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 import styles from '../styles';
 import { textVariant, staggerContainer, bagelSpin } from '../utils/motion';
@@ -18,13 +19,13 @@ const Hero = () => (
       <div>
         <div className="flex justify-center flex-start flex-col relative z-10">
           <motion.h1
-            variants={textVariant(1.3)}
+            variants={textVariant(0.9)}
             className={styles.heroHeading}
           >
             Everything
           </motion.h1>
           <motion.div
-            variants={textVariant(1.4)}
+            variants={textVariant(1.0)}
             className="flex flex-row justify-сenter items-center"
           >
             <h1 className={styles.heroHeading}>
@@ -33,20 +34,22 @@ const Hero = () => (
           </motion.div>
         </div>
         <motion.div
-          variants={textVariant(1.5)}
+          variants={textVariant(1.1)}
           className="flex flex-row justify-сenter items-center"
         >
           <p className="mt-[21px] mb-[28px] leading-[22.4px] text-black">Tasty gourmet bagels, avant-garde <br /> sandwiches & premiere bagel burgers</p>
         </motion.div>
         <motion.div
-          variants={textVariant(1.5)}
+          variants={textVariant(1.1)}
           className="flex flex-row justify-сenter items-center"
         >
           <div className="flex gap-2">
             <a href="https://order.toasttab.com/online/everything-bagels-durham-530-foster-st#!/order" target="_blank" rel="noreferrer">
               <DarkButton title="Order Now" buttonStyle="bg-light-brown" />
             </a>
-            <LightButton title="View Menu" />
+            <Link href="/menu">
+              <LightButton title="View Menu" />
+            </Link>
           </div>
         </motion.div>
 
@@ -62,7 +65,7 @@ const Hero = () => (
         />
       </motion.div>
       <motion.div
-        variants={textVariant(2.0)}
+        variants={textVariant(2.6)}
         className="absolute flex left-[300px] top-[340px]"
       >
         <img
