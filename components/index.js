@@ -7,7 +7,6 @@ import ExploreCard from './ExploreCard';
 import { SandwichMenu } from './SandwichMenu';
 import Footer from './Footer';
 import { DarkButton, LightButton, SlideInDarkButton } from './Buttons';
-import Ingredients from './Ingredients';
 import { CarouselCustom } from './CarouselCustom';
 import { EmployerCard } from './EmployerCard';
 
@@ -23,7 +22,6 @@ export {
   LightButton,
   SlideInDarkButton,
   CarouselCustom,
-  Ingredients,
   EmployerCard,
   Button,
 };

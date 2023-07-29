@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Ingredients } from '.';
+import Ingredients from './Ingredients';
 
 import styles from '../styles';
 import { slideIn, staggerContainer } from '../utils/motion';
@@ -16,7 +16,7 @@ export const SandwichMenu = ({ menu }) => (
   >
     <div className="mt-[31px] flex flex-col">
       {menu.map((sandwich, index) => (
-        <div className={`flex ${(index + 1) % 2 ? 'flex-row' : 'flex-row-reverse'} gap-6 w-full mx-auto`}>
+        <div className={`flex ${(index + 1) % 2 ? 'flex-row gap-4' : 'flex-row-reverse gap-10'} w-full mx-auto`}>
           <motion.div
             variants={slideIn(`${(index + 1) % 2 ? 'left' : 'right'}`, 'tween', 0.2, 1)}
             className="flex-1 flex justify-center flex-col"
