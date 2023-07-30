@@ -9,7 +9,7 @@ import { staggerContainer, slideIn } from '../utils/motion';
 import { menuPreview } from '../constants';
 
 const Sandwiches = () => (
-  <section className={`${styles.paddings} relative z-10 h-[900px] mt-[450px] flex justify-center mb-[600px]`}>
+  <section className={`${styles.paddings} relative z-10 h-[900px] mt-[400px] flex justify-center mb-[600px]`}>
     <motion.div
       variants={staggerContainer}
       initial="hidden"

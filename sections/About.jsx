@@ -49,7 +49,7 @@ const About = () => (
         className="relative flex-1 flex justify-center items-center left-[13px]"
       >
         <img
-          src="/team.png"
+          src="/about-us.svg"
           alt="team"
           className="w-full lg:h-[594px] h-auto min-h-[210px] object-contain rounded-[40px]"
         />

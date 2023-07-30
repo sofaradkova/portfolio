@@ -37,7 +37,7 @@ const ExploreCard = ({ id, imgUrl, title, content, index, active, handleClick })
               alt={title}
               className="absolute w-full h-full object-cover rounded-[24px]"
             />
-            <div className="absolute bottom-0 p-8 justify-start w-full flex-col">
+            <div className="absolute bottom-0 p-8 justify-start w-full flex-col bg-[rgba(0,0,0,0.5)] rounded-b-[24px]">
               <div className="inline-flex items-center text-secondary-white">
                 See What's Inside
                 <img

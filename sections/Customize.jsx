@@ -13,7 +13,7 @@ const Customize = () => (
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.15 }}
-      className="flex flex-col justify-center items-center mt-[200px]"
+      className="flex flex-col justify-center items-center mt-[150px]"
     >
       <TypingText title="Haven't found the right one?" textStyles="text-center text-[24px]" />
       <TitleText title="Customize Your Bagel" textStyles="text-center text-main-brown mt-[5px]" />
@@ -37,7 +37,7 @@ const Customize = () => (
           variants={slideIn('left', 'tween', 0.2, 1)}
           className="text-center"
         >
-          <DarkButton title="Order Now" buttonStyle="bg-light-brown mt-[50px]" />
+          <DarkButton title="Order Now" buttonStyle="bg-light-brown mt-[40px]" />
         </motion.div>
       </a>
 
