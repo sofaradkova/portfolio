@@ -2,8 +2,8 @@
 
 import { motion } from 'framer-motion';
 
+import { Button } from '@material-tailwind/react';
 import Link from 'next/link';
-import styles from '../styles';
 import { navVariants } from '../utils/motion';
 
 const Navbar = () => (
@@ -11,21 +11,14 @@ const Navbar = () => (
     variants={navVariants}
     initial="hidden"
     whileInView="show"
-    className="px-[8vw] py-4 relative mb-[65px]"
+    className="py-4 flex justify-start w-full max-w-screen-md"
   >
-    <div className={`${styles.innerWidth} mx-auto flex justify-between items-center lg:gap-8 gap-4`}>
-      <img
-        src="/main-logo.svg"
-        alt="main-logo"
-        className="w-[72px] h-[72px] object-contain"
-      />
-      <div className="flex justify-between w-[327px] gap-[32px] text-black">
-        <Link href="/">Home</Link>
-        <Link href="/menu">Menu</Link>
-        <Link href="/catering">Catering</Link>
-        <a href="/aboutus">About Us</a>
-      </div>
-    </div>
+    <Link href="/projects" prefetch>
+      <Button variant="text" size="sm" color="gray" className="flex items-center gap-2 rounded-full">
+        <i className="fa-solid fa-arrow-left-long" />
+        {' '}Back to missions
+      </Button>
+    </Link>
   </motion.nav>
 );
 

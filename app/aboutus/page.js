@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { EmployerCard, Footer, Navbar, TitleText, BodyText } from '../../components';
+import { ProjectCard, Footer, Navbar, TitleText, BodyText } from '../../components';
 
 import { employees } from '../../constants';
 import { fadeIn, staggerContainer } from '../../utils/motion';
@@ -13,7 +13,7 @@ const Page = () => (
     <div className="flex justify-center mb-[100px]">
       <div className="grid grid-cols-3 gap-6 px-6 mt-[50px]">
         {employees.map((employee, index) => (
-          <EmployerCard
+          <ProjectCard
             key={employee.name}
             index={index}
             {...employee}

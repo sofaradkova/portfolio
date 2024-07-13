@@ -22,6 +22,9 @@ module.exports = withMT({
         'main-yellow': '#F2C986',
         'main-brown': '#400113',
         'light-brown': '#4D3002',
+        'light-grey': '#757575',
+        'main-black': '#212121',
+        'background-grey': '#E9E4E4',
       },
       transitionTimingFunction: {
         'out-flex': 'cubic-bezier(0.05, 0.6, 0.4, 0.9)',
