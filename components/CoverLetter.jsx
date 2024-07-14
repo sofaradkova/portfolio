@@ -11,7 +11,6 @@ import { TitleText } from './CustomTexts';
 
 export const CoverLetter = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
 
   const [openBottom, setOpenBottom] = React.useState(false);
 
@@ -90,17 +89,17 @@ export const CoverLetter = () => {
               visible: { opacity: 1, scale: 1 },
               hidden: { opacity: 0, scale: 1 },
             }}
-            className="flex flex-col justify-center items-center"
+            className="flex flex-col justify-center items-center mt-[-30px]"
           >
             <TitleText title={<>Cover letters suck</>} textStyles="text-center" />
             <Typography className="text-[20px] text-main-black text-center mb-[8px]">Let's get to the point</Typography>
-            <Link href="/projects">
+            <Link href="/intro">
               <IconButton className="rounded-full bg-main-black hover:shadow-[#333333]/20 focus:shadow-[#333333]/20 active:shadow-[#333333]">
                 <i className="fa-solid fa-forward" />
               </IconButton>
             </Link>
           </motion.div>
-          <img src="cover-letter-mock.png" alt="cover letter" className="mt-[-130px]" />
+          <img src="cover-letter-mock.png" alt="cover letter" className="mt-[-100px]" />
         </Drawer>
       </ThemeProvider>
     </>

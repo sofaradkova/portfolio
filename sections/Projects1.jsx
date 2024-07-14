@@ -1,14 +1,14 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
-import styles from '../styles';
-import { staggerContainer, textVariant } from '../utils/motion';
-import { TitleText, TypingText, ProjectCard } from '../components';
-import { projects1 } from '../constants';
+import styles from "../styles";
+import { staggerContainer, textVariant } from "../utils/motion";
+import { TitleText, TypingText, ProjectCard } from "../components";
+import { projects1 } from "../constants";
 
 const Projects1 = () => (
-  <section className="relative z-10">
+  <section className="relative z-10 mt-12">
     <motion.div
       variants={staggerContainer}
       initial="hidden"
@@ -16,8 +16,14 @@ const Projects1 = () => (
       viewport={{ once: false, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto flex flex-col`}
     >
-      <TitleText title={<>Transform human interaction with technology</>} textStyles="text-center" />
-      <TypingText title="What have i done for this mission?" textStyles="text-center text-main-brown mt-[24px] mb-[8px] tracking-wide" />
+      <TitleText
+        title={<>Transform human interaction with technology</>}
+        textStyles="text-center"
+      />
+      <TypingText
+        title="What have i done for this mission?"
+        textStyles="text-center text-main-brown mt-[10px] mb-[12px] tracking-wide"
+      />
       <motion.div
         variants={textVariant(0.8)}
         className="flex justify-center items-center"

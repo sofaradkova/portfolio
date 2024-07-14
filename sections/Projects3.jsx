@@ -1,11 +1,11 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
-import styles from '../styles';
-import { staggerContainer, textVariant } from '../utils/motion';
-import { TitleText, TypingText, ProjectCard } from '../components';
-import { projects3 } from '../constants';
+import styles from "../styles";
+import { staggerContainer, textVariant } from "../utils/motion";
+import { TitleText, TypingText, ProjectCard } from "../components";
+import { projects3 } from "../constants";
 
 const Projects3 = () => (
   <section className="relative z-10">
@@ -16,8 +16,14 @@ const Projects3 = () => (
       viewport={{ once: false, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto flex flex-col`}
     >
-      <TitleText title={<>Unite people through digital immersive experiences</>} textStyles="text-center" />
-      <TypingText title="What have i done for this mission?" textStyles="text-center text-main-brown mt-[24px] mb-[8px] tracking-wide" />
+      <TitleText
+        title={<>Unite people through digital immersive experiences</>}
+        textStyles="text-center"
+      />
+      <TypingText
+        title="What have i done for this mission?"
+        textStyles="text-center text-main-brown mt-[10px] mb-[12px] tracking-wide"
+      />
       <motion.div
         variants={textVariant(0.8)}
         className="flex justify-center items-center"
