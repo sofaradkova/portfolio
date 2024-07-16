@@ -8,7 +8,7 @@ import { TitleText, TypingText, ProjectCard } from "../components";
 import { projects2 } from "../constants";
 
 const Projects2 = () => (
-  <section className="relative z-10">
+  <section className="relative z-10 mt-12">
     <motion.div
       variants={staggerContainer}
       initial="hidden"
@@ -18,11 +18,11 @@ const Projects2 = () => (
     >
       <TitleText
         title={<>Reimagine the craft of storytelling</>}
-        textStyles="text-center"
+        textStyles="text-center font-title"
       />
       <TypingText
-        title="What have i done for this mission?"
-        textStyles="text-center text-main-brown mt-[10px] mb-[12px] tracking-wide"
+        title="What have I done for this mission?"
+        textStyles="text-center text-[#64748B] font-title mt-[10px] mb-[12px]"
       />
       <motion.div
         variants={textVariant(0.8)}

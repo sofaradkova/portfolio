@@ -43,7 +43,7 @@ const ProjectX = ({ name, role, photo, description, link, linkHeader }) => (
       >
         {name}
       </Typography>
-      <Typography className="font-normal !text-gray-600">
+      <Typography className="font-normal text-[#64748B]">
         {description}
       </Typography>
     </div>

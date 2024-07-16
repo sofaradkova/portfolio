@@ -3,7 +3,6 @@
 const withMT = require('@material-tailwind/react/utils/withMT');
 
 module.exports = withMT({
-  plugins: [require('daisyui')],
   content: [
     './node_modules/flowbite/**/*.js',
     './node_modules/flowbite-react/**/*.js',
@@ -23,8 +22,9 @@ module.exports = withMT({
         'main-brown': '#400113',
         'light-brown': '#4D3002',
         'light-grey': '#757575',
-        'main-black': '#212121',
-        'background-grey': '#E9E4E4',
+        'main-black': '#334155',
+        'background-grey': '#f8fafc',
+        'another-black': '#212121',
       },
       transitionTimingFunction: {
         'out-flex': 'cubic-bezier(0.05, 0.6, 0.4, 0.9)',
@@ -32,6 +32,8 @@ module.exports = withMT({
       fontFamily: {
         numbers: ['"Just Another Hand"', 'sans-serif'],
         main: ['"Kaisei Tokumin"', 'sans-serif'],
+        title: ['"Raleway"', 'sans-serif'],
+        body: ['"Cabin"', 'sans-serif'],
       },
     },
   },

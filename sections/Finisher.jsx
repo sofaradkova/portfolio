@@ -2,54 +2,104 @@
 
 import { motion } from 'framer-motion';
 
+import { IconButton, Tooltip, ThemeProvider } from '@material-tailwind/react';
 import styles from '../styles';
-import { staggerContainer, slideIn, textVariant } from '../utils/motion';
-import { TitleText, TypingText, BodyText, DarkButton } from '../components';
+import { staggerContainer } from '../utils/motion';
+import { TitleText, TypingText } from '../components';
 
-const Finisher = () => (
-  <section className="relative z-10 bg-main-yellow mt-[100px]">
-    <motion.div
-      variants={staggerContainer}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
-      className={`${styles.innerWidth} mx-auto flex flex-col`}
-    >
-      <TypingText title="In The Durham Food Hall" textStyles="text-center text-main-brown mt-[110px] mb-[8px]" />
-      <TitleText title={<>Come enjoy your bagel with us</>} textStyles="text-center text-main-red" />
-      <BodyText title="Weekdays    6:30AM-1:30PM" textStyles="text-center opacity-75 mt-[26px]" />
-      <BodyText title="Weekends    7:00AM-2:00PM" textStyles="text-center opacity-75 mt-[8px]" />
-      <a href="https://order.toasttab.com/online/everything-bagels-durham-530-foster-st#!/order" target="_blank" rel="noreferrer">
-        <motion.div
-          variants={textVariant(0.8)}
-          className="flex justify-center items-center"
-        >
-          <DarkButton title="Order Now" buttonStyle="flex-[0.075] bg-main-red text-main-yellow mt-[40px] mb-[115px] border-main-red hover:bg-main-yellow hover:text-main-red" />
-        </motion.div>
-      </a>
+const Finisher = () => {
+  const theme = {
+    tooltip: {
+      defaultProps: {
+        interactive: false,
+        placement: 'top',
+        offset: 5,
+        dismiss: {},
+        animate: {
+          unmount: {},
+          mount: {},
+        },
+        className: '',
+      },
+      styles: {
+        base: {
+          bg: 'bg-main-black',
+          py: 'py-1.5',
+          px: 'px-3',
+          borderRadius: 'rounded-lg',
+          fontFamily: 'font-body',
+          fontSize: 'text-sm',
+          fontWeight: 'font-normal',
+          color: 'text-white',
+          outline: 'focus:outline-none',
+          overflowWrap: 'break-words',
+          zIndex: 'z-[999]',
+          whiteSpace: 'whitespace-normal',
+        },
+      },
+    },
+  };
 
+  return (
+    <section className="mb-[150px] mt-[-50px]">
       <motion.div
-        variants={slideIn('left', 'tween', 0.2, 1)}
-        className={`${styles.flexCenter} absolute w-[30vw] flex -bottom-[70px] -left-[55px]`}
+        variants={staggerContainer}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.25 }}
+        className={`${styles.innerWidth} mx-auto flex flex-col items-center justify-center pt-0 py-0`}
       >
-        <img
-          src="/whitefish-snd.png"
-          alt="whitefish-snd"
-          className="object-cover flex-1"
+        <TypingText title="So, what are you thinking?" textStyles="text-center mb-[8px]" />
+        <TitleText
+          title={<>See you in NYC this fall?</>}
+          textStyles="text-center font-bold font-title text-[6xl] text-main-black"
         />
+        <ThemeProvider value={theme}>
+          <div className="flex items-center justify-center gap-4 my-[20px]">
+            <Tooltip content="Resume" placement="bottom">
+              <a
+                href="/Sofa_Radkova_Resume.pdf"
+                download="Sofa_Radkova_Resume.pdf"
+              >
+                <IconButton className="rounded-full bg-main-black hover:shadow-[#333333]/20 focus:shadow-[#333333]/20 active:shadow-[#333333]/10">
+                  <i className="fa-regular fa-file" />
+                </IconButton>
+              </a>
+            </Tooltip>
+            <Tooltip content="LinkedIn (ew)" placement="bottom">
+              <a
+                href="https://www.linkedin.com/in/sofa-radkova/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <IconButton className="rounded-full bg-main-black hover:shadow-[#333333]/20 focus:shadow-[#333333]/20 active:shadow-[#333333]/10">
+                  <i className="fa-brands fa-linkedin-in" />
+                </IconButton>
+              </a>
+            </Tooltip>
+            <Tooltip content="GitHub" placement="bottom">
+              <a
+                href="https://github.com/sofaradkova"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <IconButton className="rounded-full bg-main-black hover:shadow-[#333333]/20 focus:shadow-[#333333]/20 active:shadow-[#333333]/10">
+                  <i className="fab fa-github text-lg" />
+                </IconButton>
+              </a>
+            </Tooltip>
+            <Tooltip content="Email me" placement="bottom">
+              <a href="mailto:sr549@duke.edu" target="_blank" rel="noreferrer">
+                <IconButton className="rounded-full bg-main-black hover:shadow-[#333333]/20 focus:shadow-[#333333]/20 active:shadow-[#333333]/10">
+                  <i className="fa-regular fa-envelope" />
+                </IconButton>
+              </a>
+            </Tooltip>
+          </div>
+        </ThemeProvider>
       </motion.div>
-      <motion.div
-        variants={slideIn('right', 'tween', 0.2, 1)}
-        className="absolute flex justify-end -right-[55px] -bottom-[75px] h-[23vw] w-[23vw]"
-      >
-        <img
-          src="/everything-bagel.png"
-          alt="everything-bagel"
-          className="object-cover flex-1"
-        />
-      </motion.div>
-    </motion.div>
-  </section>
-);
+    </section>
+  );
+};
 
 export default Finisher;

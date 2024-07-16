@@ -1,15 +1,15 @@
-"use client";
+'use client';
 
-import { useState } from "react";
-import { motion } from "framer-motion";
+import { useState } from 'react';
+import { motion } from 'framer-motion';
 import {
   Typography,
   Dialog,
   DialogHeader,
   DialogBody,
   Button,
-} from "@material-tailwind/react";
-import { useRouter } from "next/navigation";
+} from '@material-tailwind/react';
+import { useRouter } from 'next/navigation';
 
 const AboutMe = () => {
   const [open, setOpen] = useState(false);
@@ -21,8 +21,8 @@ const AboutMe = () => {
     handleOpen();
     e.preventDefault();
     setTimeout(() => {
-      router.push("/projects");
-    }, 7000);
+      router.push('/projects');
+    }, 10000);
   };
 
   const container = {
@@ -47,7 +47,7 @@ const AboutMe = () => {
         initial={{ opacity: 0, scale: 1.5 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1 }}
-        className="absolute inset-y-0 left-10 top-4 w-[50%]"
+        className="absolute inset-y-0 left-14 top-4 w-[50%]"
       >
         <img src="/me-photos.png" alt="sofa stickers" />
       </motion.div>
@@ -55,46 +55,60 @@ const AboutMe = () => {
         initial={{ opacity: 0, scale: 1.5 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1, delay: 1 }}
-        className="absolute inset-y-0 right-0 w-[50%] flex flex-col justify-center"
+        className="absolute inset-y-0 right-7 w-[50%] flex flex-col justify-center"
       >
-        <Typography className=" text-main-black" variant="small">
+        <Typography
+          className="text-main-black font-title text-[27px] leading-6"
+          variant="small"
+        >
           Hi, Bluecadet!
         </Typography>
-        <Typography
-          className="mt-1 mb-2 font-semi-bold text-main-black"
-          variant="h4"
-        >
+        <Typography className="mt-1 mb-2 font-bold font-title text-[64px] text-main-black">
           I'm Sofa (yes, 🛋️)
         </Typography>
         <div className="py-5">
-          <Typography className=" text-main-black" variant="paragraph">
-            Right now I am:
+          <Typography
+            className=" text-main-black font-title text-[20px] leading-6 pb-3"
+          >
+            Right now, I am:
           </Typography>
-          <ul className="list-disc ml-5">
+          <ul className="list-disc ml-5 leading-6">
             <li>
-              <Typography className=" text-main-black" variant="paragraph">
-                Coding as a Software Engineer Intern at Niantic (we make Pokemon
-                Go!)
+              <Typography
+                className=" text-main-black font-title text-[20px] leading-6 pb-1"
+                variant="paragraph"
+              >
+                Coding as a Software Engineer Intern at Niantic (Pokemon Go!)
               </Typography>
             </li>
             <li>
-              <Typography className=" text-main-black" variant="paragraph">
+              <Typography
+                className=" text-main-black font-title text-[20px] leading-6 pb-1"
+                variant="paragraph"
+              >
                 Studying Computer Science at Duke University
               </Typography>
             </li>
             <li>
-              <Typography className=" text-main-black" variant="paragraph">
+              <Typography
+                className=" text-main-black font-title text-[20px] leading-6 pb-1"
+                variant="paragraph"
+              >
                 Leading a digital privacy & security HCI research team
               </Typography>
             </li>
           </ul>
         </div>
-        <div className="py-5">
-          <Button onClick={handleClick} color="gray" className="bg-main-black">
+        <div className="py-6">
+          <Button
+            onClick={handleClick}
+            color="gray"
+            className="bg-main-black font-title text-[16px] normal-case font-normal rounded-full"
+          >
             Are Sofa & Bluecadet a match?
           </Button>
-          <Dialog open={open} handler={handleOpen}>
-            <DialogHeader>
+          <Dialog open={open} handler={handleOpen} className="p-5">
+            <DialogHeader className="font-title font-bold text-main-black">
               Looks like our missions align perfectly...
             </DialogHeader>
             <DialogBody>
@@ -104,17 +118,23 @@ const AboutMe = () => {
                 animate="show"
                 className="ml-5 mb-6"
               >
-                <motion.li variants={listItem}>
+                <motion.li
+                  variants={listItem}
+                  className="font-title text-main-black"
+                >
                   1. Transform human interaction with technology
                 </motion.li>
-                <motion.li variants={listItem}>
+                <motion.li
+                  variants={listItem}
+                  className="font-title text-main-black"
+                >
                   2. Reimagine the craft of storytelling
                 </motion.li>
-                <motion.li variants={listItem}>
+                <motion.li
+                  variants={listItem}
+                  className="font-title text-main-black"
+                >
                   3. Unite people through digital immersive experiences
-                </motion.li>
-                <motion.li variants={listItem} className="mt-3 font-bold">
-                  Let's get into specifics!
                 </motion.li>
               </motion.ol>
             </DialogBody>

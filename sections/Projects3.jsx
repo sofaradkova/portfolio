@@ -8,21 +8,21 @@ import { TitleText, TypingText, ProjectCard } from "../components";
 import { projects3 } from "../constants";
 
 const Projects3 = () => (
-  <section className="relative z-10">
+  <section className="relative z-10 mt-12">
     <motion.div
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className={`${styles.innerWidth} mx-auto flex flex-col`}
+      className={`${styles.innerWidth} mx-auto flex flex-col pb-0 py-0`}
     >
       <TitleText
         title={<>Unite people through digital immersive experiences</>}
-        textStyles="text-center"
+        textStyles="text-center font-title"
       />
       <TypingText
-        title="What have i done for this mission?"
-        textStyles="text-center text-main-brown mt-[10px] mb-[12px] tracking-wide"
+        title="What have I done for this mission?"
+        textStyles="text-center text-[#64748B] font-title mt-[10px] mb-[12px]"
       />
       <motion.div
         variants={textVariant(0.8)}

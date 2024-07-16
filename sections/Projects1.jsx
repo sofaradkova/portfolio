@@ -1,11 +1,11 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 
-import styles from "../styles";
-import { staggerContainer, textVariant } from "../utils/motion";
-import { TitleText, TypingText, ProjectCard } from "../components";
-import { projects1 } from "../constants";
+import styles from '../styles';
+import { staggerContainer, textVariant } from '../utils/motion';
+import { TitleText, TypingText, ProjectCard } from '../components';
+import { projects1 } from '../constants';
 
 const Projects1 = () => (
   <section className="relative z-10 mt-12">
@@ -18,11 +18,11 @@ const Projects1 = () => (
     >
       <TitleText
         title={<>Transform human interaction with technology</>}
-        textStyles="text-center"
+        textStyles="text-center font-title"
       />
       <TypingText
-        title="What have i done for this mission?"
-        textStyles="text-center text-main-brown mt-[10px] mb-[12px] tracking-wide"
+        title="What have I done for this mission?"
+        textStyles="text-center text-[#64748B] font-title mt-[10px] mb-[12px]"
       />
       <motion.div
         variants={textVariant(0.8)}
