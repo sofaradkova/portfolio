@@ -22,7 +22,7 @@ const AboutMe = () => {
     e.preventDefault();
     setTimeout(() => {
       router.push('/projects');
-    }, 10000);
+    }, 7000);
   };
 
   const container = {

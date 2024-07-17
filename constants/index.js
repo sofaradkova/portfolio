@@ -154,10 +154,10 @@ export const projects1 = [
 
 export const projects2 = [
   {
-    name: 'Converted a boring Visual Arts textbook into a pocket-sized AR gallery experience',
+    name: 'Constructed a pocket-sized AR gallery experience from a Visual Arts textbook',
     role: ['UX/UI Design', 'Figma', 'Snapchat Lens Studio'],
     photo: '/argallery-cover.png',
-    description: '"Introduction to Visual Studies” is the class most Duke students take either to figure out if art is something they want to pursue in college or to get an easy graduation credit for this area of knowledge. Instead, they are presented with a textbook where walls of text overpower the expected focus on visual studies. With the goal of engaging students whose primary career interests are not related to arts or whose experience in the field is minimal, as well as making visual culture accessible to people outside of the university system, I conceptualized the project around the overarching theme of experiencing art rather than memorizing theoretical information about it. This project transforms the textbook into an art gallery where the students are transported by means of AR. The users are able to see the artworks on the walls of their own rooms, listen to an audio guide, follow along with the text, and take both written as well as voice notes.',
+    description: '"Introduction to Visual Studies” is the class most Duke students take either to figure out if art is something they want to pursue in college or to get an easy graduation credit for this area of knowledge. Instead, they are presented with a textbook where walls of text overpower the expected focus on visual studies. With the goal of engaging students whose primary career interests are not related to arts or whose knowledge in the field is minimal, I conceptualized the project around the overarching theme of experiencing art rather than memorizing theoretical information about it. This project transforms the textbook into an art gallery where the students are transported by means of AR. The users are able to see the artworks on the walls of their own rooms, listen to an audio guide, follow along with the text, and take both written as well as voice notes.',
     link: 'https://drive.google.com/drive/folders/1xruzCd2HH7bkytfCHPcckJtT6PrxeNTj?usp=sharing',
     linkHeader: 'Check out the demo & prototype',
   },

@@ -3,7 +3,7 @@
 import { Typography, Chip, Button } from '@material-tailwind/react';
 
 const ProjectX = ({ name, role, photo, description, link, linkHeader }) => (
-  <section className="px-16 pb-20 h-full">
+  <section className="px-16 pb-20 h-screen">
     <div className="mx-auto max-w-screen-md">
       <img
         src={photo}
@@ -43,7 +43,7 @@ const ProjectX = ({ name, role, photo, description, link, linkHeader }) => (
       >
         {name}
       </Typography>
-      <Typography className="font-normal text-[#64748B]">
+      <Typography className="font-normal text-[#64748B] mb-5">
         {description}
       </Typography>
     </div>
