@@ -312,12 +312,13 @@ export const CoverLetter = () => {
           transition={{ duration: 0.2 }}
           className="mt-[80px]"
         >
-          <a
+          <button
             onClick={openDrawerBottom}
+            type="button"
             className="bg-transparent flex items-center justify-center cursor-pointer mt-[-180px]"
           >
             <img src="letter-icon.png" className="object-fill w-20" />
-          </a>
+          </button>
         </motion.div>
       </div>
       <ThemeProvider value={theme}>
