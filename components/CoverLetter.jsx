@@ -355,7 +355,7 @@ export const CoverLetter = () => {
           <img
             src="cover-letter-mock.png"
             alt="cover letter"
-            className="mt-[-7vw]"
+            className="sticky bottom-0"
           />
         </Drawer>
       </ThemeProvider>
