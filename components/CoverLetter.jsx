@@ -332,7 +332,7 @@ export const CoverLetter = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 10, duration: 5 }}
+            transition={{ delay: 7, duration: 4 }}
             variants={{
               visible: { opacity: 1, scale: 1 },
               hidden: { opacity: 0, scale: 1 },
@@ -355,7 +355,7 @@ export const CoverLetter = () => {
           <img
             src="cover-letter-mock.png"
             alt="cover letter"
-            className="mt-[-100px]"
+            className="mt-[-7vw]"
           />
         </Drawer>
       </ThemeProvider>

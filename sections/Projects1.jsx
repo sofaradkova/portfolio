@@ -18,7 +18,7 @@ const Projects1 = () => (
     >
       <TitleText
         title={<>Transform human interaction with technology</>}
-        textStyles="text-center font-title"
+        textStyles="text-center text-main-black font-title"
       />
       <TypingText
         title="What have I done for this mission?"
