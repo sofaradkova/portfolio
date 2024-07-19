@@ -325,7 +325,7 @@ export const CoverLetter = () => {
         <Drawer
           open={openBottom}
           onClose={closeDrawerBottom}
-          className="p-4"
+          className="p-4 flex flex-col items-center gap-12"
           ref={ref}
         >
           <motion.div
@@ -337,7 +337,7 @@ export const CoverLetter = () => {
               visible: { opacity: 1, scale: 1 },
               hidden: { opacity: 0, scale: 1 },
             }}
-            className="flex flex-col justify-center items-center mt-[-30px]"
+            className="flex flex-col justify-center items-center pb-10"
           >
             <TitleText
               title={<>Cover letters suck</>}
@@ -352,11 +352,13 @@ export const CoverLetter = () => {
               </IconButton>
             </Link>
           </motion.div>
-          <img
-            src="cover-letter-mock.png"
-            alt="cover letter"
-            className="sticky bottom-0"
-          />
+          <div className="pb-1 w-1/2">
+            <img
+              src="cover-letter-mock2.png"
+              alt="cover letter"
+              className="object-fill w-full pb-[-20px]"
+            />
+          </div>
         </Drawer>
       </ThemeProvider>
     </>
