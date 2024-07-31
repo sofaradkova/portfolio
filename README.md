@@ -1,1 +1,1 @@
-This is a redesigned website for a local place that makes delicious bagels: https://everything-bagels.vercel.app/
+See the portfolio in action: https://sofaradkova-portfolio.vercel.app/
