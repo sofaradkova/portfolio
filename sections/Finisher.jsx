@@ -51,7 +51,7 @@ const Finisher = () => {
       >
         <TypingText title="So, what are you thinking?" textStyles="text-center mb-[8px]" />
         <TitleText
-          title={<>See you in NYC this fall?</>}
+          title={<>See you this summer?</>}
           textStyles="text-center font-bold font-title text-[6xl] text-main-black"
         />
         <ThemeProvider value={theme}>

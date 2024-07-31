@@ -61,7 +61,7 @@ const AboutMe = () => {
           className="text-main-black font-title text-[27px] leading-6"
           variant="small"
         >
-          Hi, Bluecadet!
+          Hi, [imagine your name] !
         </Typography>
         <Typography className="mt-1 mb-2 font-bold font-title text-[64px] text-main-black">
           I'm Sofa (yes, 🛋️)
@@ -105,11 +105,11 @@ const AboutMe = () => {
             color="gray"
             className="bg-main-black font-title text-[16px] normal-case font-normal rounded-full"
           >
-            Are Sofa & Bluecadet a match?
+            What have I been working on?
           </Button>
           <Dialog open={open} handler={handleOpen} className="p-5">
             <DialogHeader className="font-title font-bold text-main-black">
-              Looks like our missions align perfectly...
+              Three missions form the basis of my work:
             </DialogHeader>
             <DialogBody>
               <motion.ol
