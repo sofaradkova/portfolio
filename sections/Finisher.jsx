@@ -58,8 +58,8 @@ const Finisher = () => {
           <div className="flex items-center justify-center gap-4 my-[20px]">
             <Tooltip content="Resume" placement="bottom">
               <a
-                href="/Sofa_Radkova_Resume.pdf"
-                download="Sofa_Radkova_Resume.pdf"
+                href="/Sofia_Radkova_Design_Resume.pdf"
+                download="Sofia_Radkova_Design_Resume.pdf"
               >
                 <IconButton className="rounded-full bg-main-black hover:shadow-[#333333]/20 focus:shadow-[#333333]/20 active:shadow-[#333333]/10">
                   <i className="fa-regular fa-file" />
@@ -97,7 +97,7 @@ const Finisher = () => {
             </Tooltip>
           </div>
         </ThemeProvider>
-        <div className="text-light-grey mt-20 text-xs">Portfolio created with NextJS & TailwindCSS</div>
+        <div className="text-light-grey mt-24 text-xs underline"><a href="https://github.com/sofaradkova/portfolio">Access source code for this portfolio created with NextJS & TailwindCSS</a></div>
       </motion.div>
     </section>
   );
