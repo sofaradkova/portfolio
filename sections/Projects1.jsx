@@ -29,7 +29,7 @@ const Projects1 = () => (
         className="flex justify-center items-center"
       >
         <div className="flex justify-center mb-[80px]">
-          <div className="flex gap-6 px-6 mt-[50px]">
+          <div className="grid grid-cols-2 gap-6 justify-between px-6 mt-[50px]">
             {projects1.map((project, index) => (
               <ProjectCard
                 key={project.name}

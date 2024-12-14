@@ -41,18 +41,18 @@ const Finisher = () => {
   };
 
   return (
-    <section className="mb-[150px] mt-[-50px]">
+    <section className="mb-[10px] mt-[-50px]">
       <motion.div
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
-        className={`${styles.innerWidth} mx-auto flex flex-col items-center justify-center pt-0 py-0`}
+        className={`${styles.innerWidth} mx-auto flex flex-col items-center justify-center pt-0 py-0 h-full`}
       >
         <TypingText title="So, what are you thinking?" textStyles="text-center mb-[8px]" />
         <TitleText
           title={<>See you this summer?</>}
-          textStyles="text-center font-bold font-title text-[6xl] text-main-black"
+          textStyles="text-center font-bold font-title text-[6xl] text-main-black mb-auto"
         />
         <ThemeProvider value={theme}>
           <div className="flex items-center justify-center gap-4 my-[20px]">
@@ -97,6 +97,7 @@ const Finisher = () => {
             </Tooltip>
           </div>
         </ThemeProvider>
+        <div className="text-light-grey mt-20 text-xs">Portfolio created with NextJS & TailwindCSS</div>
       </motion.div>
     </section>
   );

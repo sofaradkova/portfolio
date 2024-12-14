@@ -70,7 +70,7 @@ const AboutMe = () => {
           <Typography
             className=" text-main-black font-title text-[20px] leading-6 pb-3"
           >
-            Right now, I am:
+            This year, I
           </Typography>
           <ul className="list-disc ml-5 leading-6">
             <li>
@@ -78,7 +78,7 @@ const AboutMe = () => {
                 className=" text-main-black font-title text-[20px] leading-6 pb-1"
                 variant="paragraph"
               >
-                Coding as a Software Engineer Intern at Niantic (Pokemon Go!)
+                Coded as a <b>Software Engineer</b> Intern at Niantic (Pokemon Go!)
               </Typography>
             </li>
             <li>
@@ -86,7 +86,7 @@ const AboutMe = () => {
                 className=" text-main-black font-title text-[20px] leading-6 pb-1"
                 variant="paragraph"
               >
-                Studying Computer Science at Duke University
+                Created visuals as a <b>Design</b> Intern at Magnet Media
               </Typography>
             </li>
             <li>
@@ -94,7 +94,15 @@ const AboutMe = () => {
                 className=" text-main-black font-title text-[20px] leading-6 pb-1"
                 variant="paragraph"
               >
-                Leading a digital privacy & security HCI research team
+                Led an <b>HCI research</b> team, submitting a paper to CHI'25
+              </Typography>
+            </li>
+            <li>
+              <Typography
+                className=" text-main-black font-title text-[20px] leading-6 pb-1"
+                variant="paragraph"
+              >
+                Studied Computer Science and Visual & Media Studies at <b>Duke</b>
               </Typography>
             </li>
           </ul>

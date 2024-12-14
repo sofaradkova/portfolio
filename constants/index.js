@@ -19,14 +19,6 @@ export const projects1 = [
 
 export const projects2 = [
   {
-    name: 'Constructed a pocket-sized AR gallery experience from a Visual Arts textbook',
-    role: ['UX/UI Design', 'Figma', 'Snapchat Lens Studio'],
-    photo: '/argallery-cover.png',
-    description: '"Introduction to Visual Studies” is the class most Duke students take either to figure out if art is something they want to pursue in college or to get an easy graduation credit for this area of knowledge. Instead, they are presented with a textbook where walls of text overpower the expected focus on visual studies. With the goal of engaging students whose primary career interests are not related to arts or whose knowledge in the field is minimal, I conceptualized the project around the overarching theme of experiencing art rather than memorizing theoretical information about it. This project transforms the textbook into an art gallery where the students are transported by means of AR. The users are able to see the artworks on the walls of their own rooms, listen to an audio guide, follow along with the text, and take both written as well as voice notes.',
-    link: 'https://drive.google.com/drive/folders/1xruzCd2HH7bkytfCHPcckJtT6PrxeNTj?usp=sharing',
-    linkHeader: 'Check out the demo & prototype',
-  },
-  {
     name: 'Redesigned a bagel shop website to guide customers from the first click to the last bite',
     role: ['React', 'NextJS', 'TailwindCSS', 'Framer Motion'],
     photo: '/bagels-cover.png',
@@ -34,23 +26,31 @@ export const projects2 = [
     link: 'https://everything-bagels.vercel.app/',
     linkHeader: 'Check it out',
   },
+  {
+    name: 'Designed an activity booklet for children visiting Cooper Hewitt Design Museum',
+    role: ['Graphic Design'],
+    photo: '/museumcover.png',
+    description: 'For my project at the Cooper Hewitt Museum, I tackled the challenge of making the museum more engaging for children. I developed an activity booklet that encourages creativity and exploration, allowing kids to interact with art through drawing, coloring, and imaginative play. The booklet also provides parents with simple prompts to help engage their children in the experience. The goal was to create a fun, inspiring journey through the exhibitions that fosters a positive association with museums.',
+    link: 'https://drive.google.com/file/d/1pInnpr8V6bb47l3VxMk9Qu9WUpTN41_M/view?usp=sharing',
+    linkHeader: 'Check it out',
+  },
 ];
 
 export const projects3 = [
   {
-    name: 'Intern at Niantic, using virtual tools to enrich our experiences in the physical world',
-    role: ['Angular', 'TypeScript', 'RxJS', 'TailwindCSS'],
-    photo: '/niantic-cover.jpg',
-    description: 'Right now, I am a software engineering intern at Niantic. We are most known for producing the Pokemon Go game but are actually working on much more than that. So many people see technology as the enemy of authentic connection but we believe in creating digital worlds that enrich our experiences as human beings in the physical world, that draw us to explore, that encourage us to meet others. I think the future of tech is in creating digital immersive experiences that redefine how we perceive human bonds and communities. To bring this vision to life, I am working on the front-end features for our player communication and experimentation platform.',
-    link: 'https://nianticlabs.com/?hl=en',
-    linkHeader: 'Check out our work',
+    name: 'Conceptualized an AR tour guide for New Yorkers to share the city with tourists',
+    role: ['Figma', 'UX/UI Design'],
+    photo: '/arttourguide.png',
+    description: "I noticed that while popular New York City attractions like Times Square draw large crowds, neighborhoods like Yorkville remain largely unexplored by tourists. This results in overcrowded tourist spots and missed opportunities to showcase the city's diverse areas. To address this, I developed a case study for the augmented reality (AR) tour guide app that offers an interactive, budget-friendly alternative to traditional tours. The app allows local residents to share stories, historical facts, and hidden gems about their neighborhoods through location-based content, which users can access by pointing their phones at buildings or landmarks. For my prototype, I focused on the intersection of E 93rd Street & Lexington Avenue in Yorkville, identifying key locations like local businesses, street art, and historical spots that could be enhanced with AR markers. I incorporated features such as 3D messages from business owners and overlays of historical imagery, creating an engaging and community-driven experience that connects tourists with the authentic, everyday life of the neighborhood.",
+    link: 'https://letovonotion.notion.site/AR-Tour-Guide-E-93rd-St-13d229dd65d080eb824fd6648a2c07a6',
+    linkHeader: 'Check it out',
   },
   {
-    name: '[Unknown] - A cool future project as an intern at your company this summer',
-    role: ['TBD', "Don't know yet", 'Unknown'],
-    photo: '/bluecadet-cover.png',
-    description: '',
-    link: '',
-    linkHeader: '',
+    name: 'Constructed a pocket-sized AR gallery experience from a Visual Arts textbook',
+    role: ['UX/UI Design', 'Figma', 'Snapchat Lens Studio'],
+    photo: '/argallery-cover.png',
+    description: '"Introduction to Visual Studies” is the class most Duke students take either to figure out if art is something they want to pursue in college or to get an easy graduation credit for this area of knowledge. Instead, they are presented with a textbook where walls of text overpower the expected focus on visual studies. With the goal of engaging students whose primary career interests are not related to arts or whose knowledge in the field is minimal, I conceptualized the project around the overarching theme of experiencing art rather than memorizing theoretical information about it. This project transforms the textbook into an art gallery where the students are transported by means of AR. The users are able to see the artworks on the walls of their own rooms, listen to an audio guide, follow along with the text, and take both written as well as voice notes.',
+    link: 'https://drive.google.com/drive/folders/1xruzCd2HH7bkytfCHPcckJtT6PrxeNTj?usp=sharing',
+    linkHeader: 'Check out the demo & prototype',
   },
 ];
